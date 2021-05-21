@@ -1,8 +1,9 @@
 "use strict";
-//We are going to calculate from Fahrenheit to Celsisu temp
+//We are going to calculate from Fahrenheit to Celsius temp
 
-//setup window.onload 
+
 window.onload = function () {
+    //Connect Calculate Celsius temp button to click event handler
     const calcCelBtn = document.getElementById("calcCelBtn");
     calcCelBtn.onclick = calcCelBtnClicked;
 
@@ -13,12 +14,12 @@ window.onload = function () {
 //give our calcCelBtn some function when called on
 function calcCelBtnClicked() {
 
-    //this is our input identification process
+    //Get our input from field
     const tempFahField = document.getElementById("tempFah");
     let tempFah = Number(tempFahField.value);
-    //our conversion formula to change from tempFah to Cdegrees   
+    //Convert tempFah to Cdegrees using formula to change from tempFah to Cdegrees   
     let conversionFC = (tempFah - 32) * 5 / 9;
-    //this is our output identification process
+    //Generate our output 
     //tied to our conversionFC
     const CdegreesField = document.getElementById("Cdegrees");
     CdegreesField.value = conversionFC
