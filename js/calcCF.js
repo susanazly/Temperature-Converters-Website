@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function () {
-    const calcFahBtnBtn = document.getElementById("calcFahBtn");
+    const calcFahBtn = document.getElementById("calcFahBtn");
     calcFahBtn.onclick = calcFahBtnClicked;
 }
 
