@@ -7,8 +7,6 @@ window.onload = function () {
     const calcCelBtn = document.getElementById("calcCelBtn");
     calcCelBtn.onclick = calcCelBtnClicked;
 
-    const calcFahBtn = document.getElementById("calcFahBtn");
-    calcFahBtn.onclick = calcFahBtnClicked;
 }
 
 //give our calcCelBtn some function when called on
